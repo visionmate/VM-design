@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){$(".button").on("click",function(){$(".button").toggleClass("-menu-open")});$(".projects__gallery").filterizr({})});
