@@ -23,11 +23,11 @@
     <link type="image/ico" rel="shortcut icon" href="./assets/img/logo.ico"/>
     <link type="image/png" rel="shortcut icon" href="./assets/img/logo.png"/>
     <link rel="apple-touch-icon" href="./assets/img/logo.png" />
-    <link rel="stylesheet" href="./font/stylesheet.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="/font/stylesheet.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 </head>
-<body id="my-scrollbar">
-    <div class="wrapper">
+<body>
+    <div id="my-scrollbar" class="wrapper">
         <section class="menu">              
             <a href="/" class="menu__logo">
                visionmate.<span>design</span>
@@ -47,10 +47,10 @@
             </div>
             <nav class="menu__navbar">
                 <ul>
-                    <li class="menu--item magnet"><a href="./works.html">Work</a></li>
-                    <li class="menu--item magnet"><a href="./sevices.html">Services</a></li>
-                    <li class="menu--item magnet"><a href="./about.html">About</a></li>
-                    <li class="menu--item magnet"><a href="./contact.html">Contact</a></li>
+                    <li class="menu--item" data-magnetic data-cursor="-opaque" ><a href="./works.html">Work</a></li>
+                    <li class="menu--item" data-magnetic data-cursor="-opaque"><a href="./sevices.html">Services</a></li>
+                    <li class="menu--item" data-magnetic data-cursor="-opaque"><a href="./about.html">About</a></li>
+                    <li class="menu--item" data-magnetic data-cursor="-opaque"><a href="./contact.html">Contact</a></li>
                 </ul>
                 <div class="menu__navbar--contact">
                     <p>Contact Us</p>
@@ -167,6 +167,6 @@
         document.getElementById("cookies-message-container").remove();
         }
     </script> -->
-   <script src="./assets/js/bundle.js" defer></script>
+   <script src="/assets/js/bundle.js" defer></script>
 </body>
 </html>

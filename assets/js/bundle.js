@@ -22891,10 +22891,9 @@ __webpack_require__.r(__webpack_exports__);
 /*** IMPORTS FROM imports-loader ***/var define=false;// Init cursor
 var cursor=new cursor__WEBPACK_IMPORTED_MODULE_1__["default"]();// Init magnetic
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('[data-magnetic]').each(function(){new magnetic__WEBPACK_IMPORTED_MODULE_2__["default"](this);});//Menu
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.button').on('click',function(){jquery__WEBPACK_IMPORTED_MODULE_0___default()('.button').toggleClass('-menu-open');jquery__WEBPACK_IMPORTED_MODULE_0___default()('.menu__navbar').toggleClass('active');});jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).scroll(function(){var height=jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).scrollTop();if(height>0){jquery__WEBPACK_IMPORTED_MODULE_0___default()('.button').removeClass('-menu-open');jquery__WEBPACK_IMPORTED_MODULE_0___default()('.menu__navbar').removeClass('active');}});//Gallery 
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.button').on('click',function(){jquery__WEBPACK_IMPORTED_MODULE_0___default()('.button').toggleClass('-menu-open');jquery__WEBPACK_IMPORTED_MODULE_0___default()('.menu__navbar').toggleClass('active');});jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).scroll(function(){console.log('działa');var height=jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).scrollTop();if(height>0){jquery__WEBPACK_IMPORTED_MODULE_0___default()('.button').removeClass('-menu-open');jquery__WEBPACK_IMPORTED_MODULE_0___default()('.menu__navbar').removeClass('active');}});//Scrollbar
+smooth_scrollbar__WEBPACK_IMPORTED_MODULE_4__["default"].init(document.querySelector('#my-scrollbar'));//Gallery 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('.projects__menu li').on('click',function(){jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).siblings().removeClass('active');jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).addClass('active');});filterizr__WEBPACK_IMPORTED_MODULE_3___default.a.installAsJQueryPlugin(jquery__WEBPACK_IMPORTED_MODULE_0___default.a);jquery__WEBPACK_IMPORTED_MODULE_0___default()('.projects__gallery').filterizr();// or any other Filterizr API call
-//Scrollbar
-smooth_scrollbar__WEBPACK_IMPORTED_MODULE_4__["default"].init(document.querySelector('#my-scrollbar'));
 
 /***/ }),
 
