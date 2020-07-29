@@ -124,7 +124,6 @@ html {
 
 body {
   overflow-x: hidden;
-  /* max-width: 1920px; */
   margin: 0 auto;
   font-size: 1.6rem;
   line-height: 1.4;
@@ -141,12 +140,12 @@ body {
   @media (min-width: 960px) {
     .wrapper,
     #cookies-message-container {
-      padding-left: -webkit-calc(50% - 40rem);
-      padding-left: -moz-calc(50% - 40rem);
-      padding-left: calc(50% - 40rem);
-      padding-right: -webkit-calc(50% - 40rem);
-      padding-right: -moz-calc(50% - 40rem);
-      padding-right: calc(50% - 40rem); } }
+      padding-left: -webkit-calc(50% - 45rem);
+      padding-left: -moz-calc(50% - 45rem);
+      padding-left: calc(50% - 45rem);
+      padding-right: -webkit-calc(50% - 45rem);
+      padding-right: -moz-calc(50% - 45rem);
+      padding-right: calc(50% - 45rem); } }
   @media (min-width: 1240px) {
     .wrapper,
     #cookies-message-container {
@@ -858,7 +857,7 @@ a {
     width: -webkit-calc(100% + 6.6rem);
     width: -moz-calc(100% + 6.6rem);
     width: calc(100% + 6.6rem);
-    background-image: url("../../img/snazzy-image-2.png");
+    background-image: url("../../../img/snazzy-image-2.png");
     background-repeat: no-repeat;
     -webkit-background-size: cover;
        -moz-background-size: cover;
