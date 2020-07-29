@@ -857,7 +857,7 @@ a {
     width: -webkit-calc(100% + 6.6rem);
     width: -moz-calc(100% + 6.6rem);
     width: calc(100% + 6.6rem);
-    background-image: url("../../../img/snazzy-image-2.png");
+    background-image: url("../../img/snazzy-image-2.png");
     background-repeat: no-repeat;
     -webkit-background-size: cover;
        -moz-background-size: cover;
