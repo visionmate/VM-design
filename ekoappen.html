@@ -63,7 +63,10 @@
         <header class="project-header container">
             <h6>E-commerce / UI / Dev</h6>
             <h3>Ekoappen</h3>
-            <div class="project-header__banner"></div>
+            <div class="project-header__banner">
+                <div id="rgbKineticSlider" class="rgbKineticSlider"></div>
+                <!-- <img src="./img/ekoappen6.png"/> -->
+            </div>
             <ul class="project-header__items">
                 <li>
                     <p>Client</p>
@@ -103,19 +106,24 @@
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>  
                 <div class="sample-project__gallery container">
-                    <div class="sample-project__gallery--img">
-                        <img src="./img/ekoappen3.png"/>
+                     <div class="sample-project__gallery--img">
+                         <div class="ekoappen-hover-img first-img"></div>
+                         <img src="./img/ekoappen3.png"/>
                     </div>
                     <div class="sample-project__gallery--img">
+                        <div class="ekoappen-hover-img second-img"></div>
                         <img class="thumbnail" src="./img/ekoappen1.png"/>
                     </div>
-                    <div class="sample-project__gallery--img parallax-window">
-                        <img class="thumbnail" src="./img/ekoappen4.png"/>
+                    <div class="sample-project__gallery--img"> 
+                        <div class="ekoappen-hover-img third-img"></div>
+                        <img src="./img/ekoappen4.png"/>
                     </div>
                     <div class="sample-project__gallery--img">
+                        <div class="ekoappen-hover-img fourth-img"></div>
                         <img src="./img/ekoappen5.png"/>
                     </div>
                     <div class="sample-project__gallery--img">
+                        <div class="ekoappen-hover-img fifth-img"></div>
                         <img src="./img/ekoappen2.png"/>
                     </div>
                 </div>
@@ -155,33 +163,38 @@
             <a class="footer__visionmate-link" href="https://www.visionmate.se" target="blank">Om företaget Visionmate</a>
         </footer>
         <div class="follow"></div>
-        <!--<div id="cookies-message-container">
-            <img src="./assets/img/cookie.svg"/>
-            <div id="cookies-message">
-                <p id="cookies-title">Cookies</p>
-                <p id="cookies-description">Vi använder cookies för att förbättra användarupplevelsen och optimera vår sajt. Genom att fortsätta surfa på webbplatsen antar vi att du godkänner detta.</a></button>
-                <form>
-                    <button id="accept-cookies-checkbox" formaction="javascript:WHCloseCookiesWindow()">Accept</button>
-                </form>
-                </div>
-          </div> -->
     </div>
-    <!-- <script>
-          function WHCheckCookies(){
-            if(!localStorage.cookies_accepted) {
-            var cookies_message = document.getElementById("cookies-message-container"); 
-            cookies_message.style.display="flex" 
-            } 
-        } 
-        window.onload = WHCheckCookies;
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/TweenMax.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/imagesLoaded.pkgd.min.js"></script>
 
-        function WHCloseCookiesWindow(){ 
-        localStorage.cookies_accepted = true; 
-        document.getElementById("cookies-message-container").remove();
-        }
-    </script> -->
+        <!-- Pixi JS -->
+        <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/pixi.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/pixi-filters.min.js"></script>
+
+        <!-- Slider Plugin -->
+        <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/rgbKineticSlider.js"></script>
+        <script>
+            const images = ["./img/ekoappen6.png"];
+            rgbKineticSlider = new rgbKineticSlider({
+                slideImages: images,
+                backgroundDisplacementSprite:
+                    "http://hmongouachon.com/_demos/rgbKineticSlider/map-9.jpg",
+                cursorDisplacementSprite:
+                    "http://hmongouachon.com/_demos/rgbKineticSlider/displace-circle.png",
+                cursorScaleIntensity: 0.6,
+                cursorMomentum: 0.14,
+                swipe: true,
+                swipeDistance: window.innerWidth * 0.4,
+                swipeScaleIntensity: 2,
+                slideTransitionDuration: 0.8,
+                transitionScaleIntensity: 30,
+                transitionScaleAmplitude: 160,
+                imagesRgbEffect: false,
+                imagesRgbIntensity: 4,
+                navImagesRgbIntensity: 120,
+            });
+        </script>
     <script src="./assets/js/bundle.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
-
 </body>
 </html>
