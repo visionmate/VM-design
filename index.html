@@ -145,17 +145,29 @@
             <a class="footer__visionmate-link" href="https://www.visionmate.se" target="blank">Om företaget Visionmate</a>
         </footer>
         <div class="follow"></div>
-        <!-- <div id="cookies-message-container">
+        <div id="cookies-message-container">
             <div id="cookies-message">
-                <p id="cookies-description">We use cookies to analyze site performance and deliver personalized content. By clicking “Agree”, you consent to our <a href="#"><span>Cookie Policy</span></a>. You may change your settings at any time.</button>
+                <p id="cookies-description">Vi använder cookies för att förbättra användarupplevelsen och optimera vår sajt. Genom att fortsätta surfa på webbplatsen antar vi att du godkänner detta.</button>
                 <form>
                     <button id="accept-cookies-checkbox" formaction="javascript:WHCloseCookiesWindow()">Accept</button>
                     <button id="more-cookies-checkbox">More options</button>
                 </form>
             </div>
-        </div> -->
+        </div>
     </div>
-
+    <script>
+        window.onload = WHCheckCookies;
+        function WHCheckCookies(){
+          if(!localStorage.cookies_accepted) {
+          var cookies_message = document.getElementById("cookies-message-container"); 
+          cookies_message.style.display="flex" 
+          } 
+      }
+      function WHCloseCookiesWindow(){ 
+      localStorage.cookies_accepted = true; 
+      document.getElementById("cookies-message-container").remove();
+      }
+  </script>
    <script src="./assets/js/bundle.js" defer></script>
 </body>
 </html>
