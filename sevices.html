@@ -29,120 +29,98 @@
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
-    <div id="my-scrollbar" class="wrapper services">
-        <section class="menu">              
-            <a href="/" class="menu__logo">
-               visionmate.<span>design</span>
-            </a>
-            <div class="button">
-                <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <g>
-                    <line x1="0" y1="8" x2="24" y2="8" stroke-width="2"/>
-                    <line x1="0" y1="15" x2="24" y2="15" stroke-width="2" />
-                </g>
-                
-                <g>
-                    <line x1="0" y1="12" x2="24" y2="12" stroke-width="2" />
-                    <line x1="0" y1="12" x2="24" y2="12" stroke-width="2" />
-                </g>
-                </svg>
-            </div>
-            <nav class="menu__navbar">
-                <ul>
-                    <li data-magnetic data-cursor="-opaque" ><a href="./works.html">Work</a></li>
-                    <li data-magnetic data-cursor="-opaque" ><a href="#">Services</a></li>
-                    <li data-magnetic data-cursor="-opaque" ><a href="#">About</a></li>
-                    <li data-magnetic data-cursor="-opaque" ><a href="./contact.html">Contact</a></li>
-                </ul>
-                <div class="menu__navbar--contact">
-                    <p>Contact Us</p>
-                    <a class="mail-visionmate" href="mailto:sales@visionmate.se">design@visionmate.se</a>
+    <div class="wrapper services" data-scroll-container>
+        <div data-scroll-section>
+            <section class="menu">              
+                <a href="/" class="menu__logo">
+                visionmate.<span>design</span>
+                </a>
+                <div class="button">
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <line x1="0" y1="8" x2="24" y2="8" stroke-width="2"/>
+                        <line x1="0" y1="15" x2="24" y2="15" stroke-width="2" />
+                    </g>
+                    
+                    <g>
+                        <line x1="0" y1="12" x2="24" y2="12" stroke-width="2" />
+                        <line x1="0" y1="12" x2="24" y2="12" stroke-width="2" />
+                    </g>
+                    </svg>
                 </div>
-            </nav>
-        </section>
-        <main id="main" class="main container">
-            <h6>Vad kan vi göra för er?</h6>
-            <h3>Våra tjänster</h3>
-            <section class="services">
-                <div class="services__item">
-                    <h3><span>webb.</span></h3>
-                    <div class="services__item--description">
-                        <h4>Utveckling // Användarfokus // Modernt</h4>
-                        <p>Er totala utvecklingsresurs.</p>
-                    </div>
-                </div>
-                <div class="services__item">
-                    <h3><span>analys.</span></h3>
-                    <div class="services__item--description">
-                        <h4>Affärsnytta // Skräddarsytt // Effektivt </h4>
-                        <p>Säkra er digitala tillväxt.</p>
-                    </div>
-                </div>
-                <div class="services__item">
-                    <h3><span>design.</span></h3>
-                    <div class="services__item--description">
-                        <h4>Typografi // UI Design // Strateg</h4>
-                        <p>Vi analyserar behoven och vågar utmana.</p>
-                    </div>
-                </div>
-                <div class="services__item">
-                    <h3><span>app.</span></h3>
-                    <div class="services__item--description">
-                        <h4>Mobil // Webb // Native</h4>
-                        <p>Vi kan applikationer för datorer och mobila enheter</p>
-                    </div>
-                </div>
-            </section>
-            <section class="contact">
-                <h3>Berätta om er digitala resa, </br><span>vi tar utmaningarna</span> på vägen.<h3>
-                <div class="contact__data">
-                    <p>Östermalmstorg 1,</br>114 42 Stockholm</p>
+                <nav class="menu__navbar">
                     <ul>
-                        <li><a href="https://www.instagram.com/visionmateab/" target="blank">Instagram</a></li>
-                        <li><a href="#">Linkedin</a></li>
-                        <li><a href="https://www.facebook.com/visionmate.se" target="blank">Facebook</a></li>
+                        <li data-magnetic data-cursor="-opaque" ><a href="./works.html">Work</a></li>
+                        <li data-magnetic data-cursor="-opaque" ><a href="#">Services</a></li>
+                        <li data-magnetic data-cursor="-opaque" ><a href="./contact.html">Contact</a></li>
                     </ul>
-                    <div>
-                        <a class="phone-visionmate" href="tel:+46 8 410 45 750">+46 8 410 45 750</a>
+                    <div class="menu__navbar--contact">
+                        <p>Contact Us</p>
                         <a class="mail-visionmate" href="mailto:sales@visionmate.se">design@visionmate.se</a>
                     </div>
-                </div>
+                </nav>
             </section>
-        </main>
-         <footer class="footer">
-            <ul class="footer__list">
-                <li><a href="./works.html">Jobb</a></li>
-                <li><a href="#">Tjänster</a></li>
-                <li><a href="./contact.html">Kontakt</a></li>
-                <li><a href="#">GDPR</a></li>
-            </ul>
-            <a class="footer__visionmate-link" href="https://www.visionmate.se" target="blank">Om företaget Visionmate</a>
-        </footer>
-        <!--<div id="cookies-message-container">
-            <img src="./assets/img/cookie.svg"/>
-            <div id="cookies-message">
-                <p id="cookies-title">Cookies</p>
-                <p id="cookies-description">Vi använder cookies för att förbättra användarupplevelsen och optimera vår sajt. Genom att fortsätta surfa på webbplatsen antar vi att du godkänner detta.</a></button>
-                <form>
-                    <button id="accept-cookies-checkbox" formaction="javascript:WHCloseCookiesWindow()">Accept</button>
-                </form>
-                </div>
-          </div> -->
+            <main id="main" class="main container">
+                <h6>Vad kan vi göra för er?</h6>
+                <h3>Våra tjänster</h3>
+                <section class="services">
+                    <div class="services__item">
+                        <h3><span>webb.</span></h3>
+                        <div class="services__item--description">
+                            <h4>Utveckling // Användarfokus // Modernt</h4>
+                            <p>Er totala utvecklingsresurs.</p>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <h3><span>analys.</span></h3>
+                        <div class="services__item--description">
+                            <h4>Affärsnytta // Skräddarsytt // Effektivt </h4>
+                            <p>Säkra er digitala tillväxt.</p>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <h3><span>design.</span></h3>
+                        <div class="services__item--description">
+                            <h4>Typografi // UI Design // Strateg</h4>
+                            <p>Vi analyserar behoven och vågar utmana.</p>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <h3><span>app.</span></h3>
+                        <div class="services__item--description">
+                            <h4>Mobil // Webb // Native</h4>
+                            <p>Vi kan applikationer för datorer och mobila enheter</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="contact">
+                    <h3>Berätta om er digitala resa,</h3>
+                    <h3><span>vi tar utmaningarna</span> på vägen.</h3>
+                    <div class="contact__data">
+                        <p>Östermalmstorg 1,</br>114 42 Stockholm</p>
+                        <ul>
+                            <li><a href="https://www.instagram.com/visionmateab/" target="blank">Instagram</a></li>
+                            <li><a href="#">Linkedin</a></li>
+                            <li><a href="https://www.facebook.com/visionmate.se" target="blank">Facebook</a></li>
+                        </ul>
+                        <div>
+                            <a class="phone-visionmate" href="tel:+46 8 410 45 750">+46 8 410 45 750</a>
+                            <a class="mail-visionmate" href="mailto:sales@visionmate.se">design@visionmate.se</a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <ul class="footer__list">
+                    <li><a href="./works.html">Jobb</a></li>
+                    <li><a href="#">Tjänster</a></li>
+                    <li><a href="./contact.html">Kontakt</a></li>
+                    <li><a href="#">GDPR</a></li>
+                </ul>
+                <a class="footer__visionmate-link" href="https://www.visionmate.se" target="blank">Om företaget Visionmate</a>
+            </footer>
+        </div>
     </div>
-    <!-- <script>
-          function WHCheckCookies(){
-            if(!localStorage.cookies_accepted) {
-            var cookies_message = document.getElementById("cookies-message-container"); 
-            cookies_message.style.display="flex" 
-            } 
-        } 
-        window.onload = WHCheckCookies;
-
-        function WHCloseCookiesWindow(){ 
-        localStorage.cookies_accepted = true; 
-        document.getElementById("cookies-message-container").remove();
-        }
-    </script> -->
     <script src="./assets/js/bundle.js" defer></script>
 </body>
 </html>

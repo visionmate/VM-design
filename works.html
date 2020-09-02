@@ -29,7 +29,8 @@
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
-    <div id="my-scrollbar" class="wrapper works">
+    <div class="wrapper works" data-scroll-container>
+        <div data-scroll-section>
         <section class="menu">              
             <a href="/" class="menu__logo">
                visionmate.<span>design</span>
@@ -51,7 +52,6 @@
                 <ul>
                     <li data-magnetic data-cursor="-opaque" ><a href="#">Work</a></li>
                     <li data-magnetic data-cursor="-opaque" ><a href="./sevices.html">Services</a></li>
-                    <li data-magnetic data-cursor="-opaque" ><a href="#">About</a></li>
                     <li data-magnetic data-cursor="-opaque" ><a href="./contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -62,7 +62,7 @@
                 <h3>Varför skriva,</br> när vi kan visa?</h3>
                 <div class="projects__container">
                     <div class="projects__menu">
-                        <p>Categories:</p>
+                        <p>Områden:</p>
                         <ul>
                             <li class="active" data-filter="all">all</li>
                             <li data-filter="1">ui</li>
@@ -78,32 +78,25 @@
                     </div>
                     <div class="projects__gallery">
                         <div class="filtr-item" data-category="1, 2, 3, 4" data-sort="value">
-                           <a href="./ekoappen.html" class="cb-demo-item" data-cursor-text="Ekoappen">
+                           <a href="./ekoappen.html" class="cb-demo-item" data-cursor-text="View case">
                                 <img src="./img/ekoappen2.png" alt="Ekoappen"/>   
                                 <h4>Ekoappen</h4>
                                 <h5>Built from A to Z</h5>
                             </a>
                         </div>
                         <div class="filtr-item" data-category="5" data-sort="value">
-                            <img src="./img/2.png" alt=""/>
-                            <h4>Renault Semaphore</h4>
-                            <h5>Built from A to Z</h5>
-                        </div>
-                        <div class="filtr-item" data-category="1, 3" data-sort="value">
-                            <img src="./img/3.png" alt=""/>
-                            <h4>vBlocks</h4>
-                            <h5>UI / UX</h5>
-                        </div>
-                        <div class="filtr-item" data-category="4, 2" data-sort="value">
-                            <img src="./img/4.png" alt=""/>
-                            <h4>Gretabo</h4>
-                            <h5>Built from A to Z</h5>
+                            <a href="./toofab.html" class="cb-demo-item" data-cursor-text="View case">
+                                <img src="./img/toofabfilter.png" alt=""/>
+                                <h4>Toofab</h4>
+                                <h5>Built from A to Z</h5>
+                            </a>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="contact">
-                <h3>Berätta om er digitala resa, </br><span>vi tar utmaningarna</span> på vägen.<h3>
+                <h3>Berätta om er digitala resa,</h3>
+                <h3><span>vi tar utmaningarna</span> på vägen.</h3>
                 <div class="contact__data">
                     <p>Östermalmstorg 1,</br>114 42 Stockholm</p>
                     <ul>
@@ -128,32 +121,8 @@
             <a class="footer__visionmate-link" href="https://www.visionmate.se" target="blank">Om företaget Visionmate</a>
         </footer>
         <div class="follow"></div>
-        <!--<div id="cookies-message-container">
-            <img src="./assets/img/cookie.svg"/>
-            <div id="cookies-message">
-                <p id="cookies-title">Cookies</p>
-                <p id="cookies-description">Vi använder cookies för att förbättra användarupplevelsen och optimera vår sajt. Genom att fortsätta surfa på webbplatsen antar vi att du godkänner detta.</a></button>
-                <form>
-                    <button id="accept-cookies-checkbox" formaction="javascript:WHCloseCookiesWindow()">Accept</button>
-                </form>
-                </div>
-          </div> -->
-    </div> 
+        </div> 
     </div>
-    <!-- <script>
-          function WHCheckCookies(){
-            if(!localStorage.cookies_accepted) {
-            var cookies_message = document.getElementById("cookies-message-container"); 
-            cookies_message.style.display="flex" 
-            } 
-        } 
-        window.onload = WHCheckCookies;
-
-        function WHCloseCookiesWindow(){ 
-        localStorage.cookies_accepted = true; 
-        document.getElementById("cookies-message-container").remove();
-        }
-    </script> -->
     <script src="./assets/js/bundle.js" defer></script>
 </body>
 </html>
