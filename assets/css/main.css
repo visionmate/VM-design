@@ -631,6 +631,11 @@ a {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -688,21 +693,31 @@ a {
       .projects__container .projects__menu ul li.active {
         color: #3558AE; }
   .projects__container .projects__gallery {
-    margin-bottom: 20rem; }
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    @media (min-width: 768px) {
+      .projects__container .projects__gallery {
+        gap: 5rem; } }
     .projects__container .projects__gallery .filtr-item {
-      width: 100%;
-      min-height: 40rem; }
+      -webkit-flex-basis: 100%;
+          -ms-flex-preferred-size: 100%;
+              flex-basis: 100%; }
       @media (min-width: 768px) {
         .projects__container .projects__gallery .filtr-item {
-          width: 50%;
-          height: 80rem; } }
-      @media (min-width: 1240px) {
-        .projects__container .projects__gallery .filtr-item:nth-child(1), .projects__container .projects__gallery .filtr-item:nth-child(3) {
-          margin-bottom: 5rem;
-          min-height: 62rem; } }
-      @media (min-width: 1240px) {
-        .projects__container .projects__gallery .filtr-item:nth-child(2), .projects__container .projects__gallery .filtr-item:nth-child(4) {
-          padding-left: 5rem; } }
+          -webkit-flex-basis: -webkit-calc(50% - 2.5rem);
+              -ms-flex-preferred-size: calc(50% - 2.5rem);
+                  flex-basis: -moz-calc(50% - 2.5rem);
+                  flex-basis: calc(50% - 2.5rem);
+          width: -webkit-calc(50% - 2.5rem);
+          width: -moz-calc(50% - 2.5rem);
+          width: calc(50% - 2.5rem); } }
       .projects__container .projects__gallery .filtr-item img {
         max-width: 100%; }
 
@@ -874,13 +889,7 @@ a {
     margin-left: -2.7rem;
     width: -webkit-calc(100% + 6.6rem);
     width: -moz-calc(100% + 6.6rem);
-    width: calc(100% + 6.6rem);
-    background-image: url("../../../img/snazzy-image-2.png");
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-            background-size: cover;
-    background-position: center; }
+    width: calc(100% + 6.6rem); }
     @media (min-width: 960px) {
       .contact-page .main-contact .main-contact__map {
         height: 50rem;
@@ -956,13 +965,12 @@ a {
       letter-spacing: -2.94px; } }
   .project .project-header__banner {
     margin-top: 10rem;
-    width: 100%;
     margin-bottom: 15rem;
     margin-left: -2.7rem;
     width: -webkit-calc(100% + 6.6rem);
     width: -moz-calc(100% + 6.6rem);
     width: calc(100% + 6.6rem);
-    height: 40vh;
+    height: 50vh;
     overflow: hidden; }
     @media (min-width: 960px) {
       .project .project-header__banner {
@@ -978,19 +986,15 @@ a {
         width: -webkit-calc(100% + 110rem);
         width: -moz-calc(100% + 110rem);
         width: calc(100% + 110rem); } }
+    .project .project-header__banner .o-image {
+      height: 100%; }
     .project .project-header__banner .c-speed-block_image {
       height: 100%;
-      width: 100%;
       -webkit-background-size: cover;
          -moz-background-size: cover;
               background-size: cover;
-      background-repeat: no-repeat; }
-      @media (min-width: 960px) {
-        .project .project-header__banner .c-speed-block_image {
-          height: 50rem; } }
-      @media (min-width: 1240px) {
-        .project .project-header__banner .c-speed-block_image {
-          height: 60rem; } }
+      background-repeat: no-repeat;
+      background-position: center; }
   @media (min-width: 960px) {
     .project .project-header__items {
       display: -webkit-box;
@@ -1128,6 +1132,11 @@ a {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
